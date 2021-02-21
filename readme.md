@@ -12,6 +12,6 @@
 
 进度：
 
-[Day1](day1.md)
+[Day1](/md/day1.md)
 
 
