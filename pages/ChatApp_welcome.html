@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<style type="text/css">
+			body{
+				background-image: url(../images/bg.png);
+				/* 
+				 将背景扩展足够大以使背景图像完全覆盖背景区域
+				 */
+				background-size: cover;
+			}
+			
+			.btns{
+				position: absolute;
+				bottom:60px;
+				height:40px;
+				width:100%;
+			}
+			
+			.btn{
+				width: 50%;
+				text-align: center;
+			}
+			
+			.mui-btn-green{
+				width: 120px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<div class="btns" >
+			<div class="btn mui-pull-left">
+				<button id="login" class="mui-btn mui-btn-green">登录</button>
+			</div>
+			<div class="btn mui-pull-right">
+				<button id="login" class="mui-btn mui-btn-green">注册</button>
+			</div>
+		</div>
+		
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			document.getElementById("login").addEventListener("tap",function(){
+				mui.openWindow({
+					url:'login.html',
+					id:'login'
+				});
+			})
+		</script>
+	</body>
+
+</html>
