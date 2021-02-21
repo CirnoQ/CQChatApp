@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  #servlet ������·��
+  servlet:
+    context-path: /cqchat_sys
+
+spring:
+  datasource:
+    name: cqchar_sys
+    #����druid����Դ
+    type: com.alibaba.druid.pool.DruidDataSource
+    #�������ݿ��url
+    url: jdbc:mysql:///cqchat
+    #�û��� ����
+    username: root
+    password: 123456
+    #������
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #���ͳ��
+    filters: stat
+    initial-size: 2 #��ʼ������
+    max-idle: 10 #������������
+    min-idle: 1 #��С����������
+    max-wait: 60000 #��ȡ���ӳ�ʱ�ĵȴ�ʱ��
+    max-active: 20 #�������
+    time-between-evict-runs-millis: 60000 #���رտ�������
+    min-evictable-idle-time-millis: 3000000
+    validation-query: SELECT 'X'
+    test-while-idle: true
+    test-on-borrow: false
+
+
