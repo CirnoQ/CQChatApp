@@ -30,3 +30,20 @@
 在MUI中封装了常用的Ajax函数，我们可以使用这些函数实现与后台的少量数据交换，以达到网页异步更新的目的。即在不重新加载整个网页的情况下，对网页的某部分进行更新。
 
 因为我们的后台程序还没有开始写，所以我们目前只能实现对用户名和密码的合法性检验。之后我们完成后端程序后再来完善这一部分程序。
+
+## 后台项目框架搭建
+现在我们开始进行后台框架的搭建。我们使用[SpringBoot](https://spring.io/projects/spring-boot)微服务架构，以快速配置项目。
+
+- ### 使用Idea创建Spring Initializr项目
+在Idea中可以直接创建Spring项目，我们点击创建后填写相关信息并选择依赖项即可完成创建。这里我们选择了Spring Web、Mybatis、Mysql Driver依赖。
+
+- ### 在pom.xml中添加阿里巴巴druid数据源
+[阿里巴巴druid数据源](https://github.com/alibaba/druid)
+
+在pom.xml中添加之后即配置完毕。
+
+- ### 配置application.yml
+在application.yml中配置端口号、上下文路径、数据源、数据库信息等。
+
+- ### 建立控制层controller
+我们建立controller文件夹，并且新建一个test类以及test.html文件，请求路径为"/test"。接着启动application，进入在浏览器输入"http://localhost:8080/cqchat_sys/test"，成功显示test.html中的内容表示我们的内置tomcat配置成功。
