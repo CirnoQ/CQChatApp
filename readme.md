@@ -14,4 +14,8 @@
 
 [Day1](/md/day1.md)
 
+[Day2](/md/day2.md)
+
+[Day3](/md/day3.md)
+
 

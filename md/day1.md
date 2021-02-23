@@ -46,4 +46,4 @@
 在application.yml中配置端口号、上下文路径、数据源、数据库信息等。
 
 - ### 建立控制层controller
-我们建立controller文件夹，并且新建一个test类以及test.html文件，请求路径为"/test"。接着启动application，进入在浏览器输入"http://localhost:8080/cqchat_sys/test"，成功显示test.html中的内容表示我们的内置tomcat配置成功。
+我们建立controller文件夹，并且新建一个test类以及test.html文件，请求路径为"/test"。接着启动application，进入在浏览器输入`"http://localhost:8080/cqchat_sys/test"`，成功显示test.html中的内容表示我们的内置tomcat配置成功。
