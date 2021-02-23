@@ -11,5 +11,10 @@ public class TestController {
         return "test";
     }
 
+    @RequestMapping("/userlist")
+    public String userList(){
+        return "user_list";
+    }
+
 
 }
